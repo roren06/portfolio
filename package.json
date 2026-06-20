@@ -1,0 +1,11 @@
+﻿{
+  "name": "creative-portfolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix portfolio",
+    "preview:mobile": "npm run build --prefix portfolio && npm run start --prefix portfolio",
+    "build": "npm run build --prefix portfolio",
+    "start": "npm run start --prefix portfolio",
+    "lint": "npm run lint --prefix portfolio"
+  }
+}
