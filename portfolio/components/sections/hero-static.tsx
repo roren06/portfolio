@@ -1,5 +1,6 @@
 import { ArrowDown, MapPin } from "lucide-react";
 import { GithubIcon } from "@/components/ui/github-icon";
+import { ResumeButton } from "@/components/ui/resume-button";
 import { heroContent, site } from "@/lib/data";
 
 function MobileLink({
@@ -59,6 +60,7 @@ export function HeroStatic() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <MobileLink href="#projects">View projects</MobileLink>
+          <ResumeButton mobile />
           <MobileLink href={site.github} className="border-border bg-transparent">
             <GithubIcon className="h-4 w-4" />
             GitHub

@@ -68,6 +68,7 @@ export function ContactSection() {
             <GithubIcon className="h-4 w-4" />
             GitHub
           </MobileContactLink>
+          <ResumeButton mobile compact className="border-border bg-transparent" />
         </div>
       ) : (
         <div className="mt-8 flex flex-wrap gap-4">

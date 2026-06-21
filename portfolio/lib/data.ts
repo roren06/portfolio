@@ -13,7 +13,7 @@ export const site = {
   profileImageVersion: 4,
   profileStyle: "photo" as "sticker" | "photo",
   /** Set true after adding public/resume.pdf */
-  resumeAvailable: false,
+  resumeAvailable: true,
   resumeUrl: "/resume.pdf",
 } as const;
 
