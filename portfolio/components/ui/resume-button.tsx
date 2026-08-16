@@ -19,6 +19,7 @@ const mobileDisabledClass =
   "inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-border/60 bg-card/40 px-5 py-2.5 text-sm font-medium text-muted";
 
 export function ResumeButton({ className, compact, mobile }: ResumeButtonProps) {
+  const resumeHref = `${site.resumeUrl}?v=${site.resumeVersion}`;
   const label = compact ? "Resume" : "Download resume";
   const disabledLabel = compact ? "Resume soon" : "Resume — coming soon";
 
@@ -39,7 +40,7 @@ export function ResumeButton({ className, compact, mobile }: ResumeButtonProps) 
   if (mobile) {
     return (
       <a
-        href={site.resumeUrl}
+        href={resumeHref}
         download
         className={cn(mobileLinkClass, className)}
       >
@@ -50,7 +51,7 @@ export function ResumeButton({ className, compact, mobile }: ResumeButtonProps) 
   }
 
   return (
-    <MagneticButton href={site.resumeUrl} className={className} download>
+    <MagneticButton href={resumeHref} className={className} download>
       <FileText className="h-4 w-4" />
       {label}
     </MagneticButton>

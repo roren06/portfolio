@@ -15,6 +15,8 @@ export const site = {
   /** Set true after adding public/resume.pdf */
   resumeAvailable: true,
   resumeUrl: "/resume.pdf",
+  /** Bump whenever you replace public/resume.pdf to bust browser cache */
+  resumeVersion: 4,
 } as const;
 
 export type Project = {
